@@ -1,0 +1,142 @@
+
+* {
+font-family: Gputeks;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #212633;
+
+}
+
+html {
+font-size: 30px;
+}
+
+h1 {
+font-size: 6rem;
+}
+
+h2 {
+    font-size: 2rem;
+    background-color:#11151d;
+}
+
+p {
+    padding-top: 0.3rem;
+    font-size: 0.5rem;
+    background-color: #11151d;
+}
+a{
+    text-decoration: none;
+    color: #103fb8;
+}
+body{
+
+    height: 100%;
+}
+header{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding-left: 0;
+    margin-left: 0;
+    border: black;
+    background-color: #11151d;
+    box-shadow: 1 1 1 rgb(44, 80, 197);
+}
+h1{
+    background: linear-gradient(70deg, black -15%, red 50%, white 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 20px auto;
+}
+.head-txt{
+    margin: auto;
+    display: block;
+
+    border: black;
+    background-color: #11151d;
+    box-shadow: 1 1 1 rgb(44, 80, 197);
+    width: 70%;
+    border-radius: 30px 30px 1px 1px;
+}
+.head-button{
+    display: block;
+    padding: 10px;
+    height: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 255, 21, 0.562);
+}
+header a{
+    align-items: end;
+}
+
+.elements-cards{
+    margin-top: 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    flex-wrap: wrap;
+
+}
+.cards{
+    width: 40%;
+    height: 28vh;
+    display: flex;
+    flex-wrap: nowrap;
+    border: solid white;
+    color: white;
+}
+
+.cards img{
+    margin-top: 16%;
+
+}
+.left{
+    width: 20%;
+    text-align: center;
+    box-shadow: 1 1 1 rgb(44, 80, 197);
+ 
+}
+.right{
+    width: 80%;
+    padding: 10px;
+    border: solid white;
+    text-align: center;
+    background-color: #11151d;
+    box-shadow: black 1px 0 10px;
+}
+.left-top{
+    border: solid;
+    height: 50%;
+    background-color: #11151d;
+    box-shadow: black 1px 0 10px;
+}
+.left-bot{
+    border: solid;
+    height: 50%;
+    background-color:#11151d;
+    box-shadow: black 1px 0 10px;
+}
+.card-frost{
+    border-color: white;
+}
+.card-flame, .card-flame div, .card-flame hr{
+    border-color: rgb(167, 23, 23);
+}
+.card-metal, .card-metal div, .card-metal hr{
+    border-color: gray;
+}
+.card-shadow, .card-shadow div, .card-shadow hr{ 
+    border-color: rgb(126, 12, 116);
+}
+.card-thunder, .card-thunder div, .card-thunder hr{ 
+    border-color: rgb(208, 235, 72);
+}
+.card-wind, .card-wind div, .card-wind hr{ 
+    border-color: rgb(135, 196, 142);
+}
+
+

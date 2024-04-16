@@ -1,0 +1,438 @@
+@font-face {
+    font-family: "Gputeks";
+    src: url("font/Gputeks-Regular.woff")format("woff"),
+        url("font/Gputeks-Regular.woff2")format("woff2")
+}
+
+* {
+    font-family: Gputeks;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+}
+.side-nav {
+    background:linear-gradient(70deg, #222735 0%, #548083 100%);
+    position: fixed;
+    height: calc(100vh - 162px);
+    right: 0;
+    top: 0;
+    width: 138px;
+    margin: 81px 0px;
+    padding: 50px 30px;
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 10000000;
+    text-shadow: 1px 1px 1px rgba(0, 255, 21, 0.562);
+    box-shadow: black 1px 0 10px;
+    color: white;
+}
+.nav-right-top{
+    height: 20%;
+    text-shadow: 1px 1px 1px rgb(23, 23, 122);
+}
+.right-nav-bot{
+    height: 80%;
+    align-items: end;
+
+}
+main{
+    width: 100%;
+    background-color: #212633;
+}
+.other{
+    width: 80%;
+    margin-left: 5%;
+    
+}
+.nav-text {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin: 0 auto;
+    color: white;
+    font-size: 0.5rem;
+    margin-top: 170px;
+    
+}
+
+.nav-right {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.side-nav:hover {
+    width: 430px;
+}
+
+.nav-items {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 41px 0px;
+
+}
+.nav-logo{
+    width: 50px;
+}
+.header {
+    background-color: #212633;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-shadow: black 1px 0 10px;
+    
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header-bg1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.header-bg2 {
+    position: absolute;
+    left: 600px;
+    top: 535.1px;
+    animation: header-rocket-fly 6s linear 1 forwards;
+}
+
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    padding: 80px 70px;
+    text-shadow: 1px 1px 1px rgba(0, 255, 21, 0.562);
+}
+.header-content h2{
+    font-size: 40px;
+}
+.header-content button {
+    width: 440px;
+    height: 100px;
+    font-size: 20   px;
+    background: linear-gradient(70deg, #222735 0%, #548083 100%);
+    color: white;
+    background-size: 300%;
+    text-shadow: 1px 1px 1px rgba(0, 255, 21, 0.562);
+}
+
+.about-deepwoken {
+    box-shadow: black 1px 0 10px;
+    display: flex;
+    background: linear-gradient(0deg, #2B344B 0%, #212633 100%);
+    color: white;
+    width: 100%;
+    height: 110vh;
+    padding: 80px 70px;
+    padding-right: 138px;
+    background-image: url(https://i.ytimg.com/vi/dkc1RT43YHg/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: black 1px 0 10px;
+}
+.about-deepwoken h2{
+    text-align:center;
+
+}
+
+
+.about-right {
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    
+}
+.about-right h2 {
+    margin-bottom: 1%;
+}
+
+.about-left {
+    margin-left: 124;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.weapons{
+    height: 100vh;
+    display: flex;
+    background-color:  #191c25;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 70px;
+    padding-right: 150px;
+    color: rgba(255, 255, 255, 0.877);
+    text-shadow: 1px 1px 1px rgba(0, 255, 21, 0.562);
+    flex-wrap: wrap;
+    box-shadow: black 1px 0 10px;
+}
+.weapons img{
+    box-shadow: blue 1px 0px 10px;
+    width: 250px;
+    align-items: center;
+    align-content: center;
+  
+}
+.weapons-top{
+    display: flex;
+    margin-top: 1.5px;
+    height: 30vh;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+.weapons-top-left h2{
+    text-align: center;
+}
+.weapons-top-left{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.weapons-top-right{
+    display: flex;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.weapons-bottom{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    height: 70vh;
+}
+.weapons-bottom-left{
+    width: 30%;
+    
+}
+
+.weapons-bottom-left p{
+    text-align: center;
+    flex-wrap: nowrap;
+    align-items: end;
+}
+.weapons-bottom-left img{
+    width: 250px;
+    
+}
+.weapon-bottom-right{
+    width: 70%;
+    align-items: end;
+}
+.weapons-img{
+    width: 250px;
+    box-shadow: blue 1px 0px 10px;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.weapons-top-right{
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.rot:hover {
+    animation-name: rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.elem:hover {
+    animation-name: rotate; 
+    animation-duration: 1.5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.extra-space{
+    height: 30px;
+    box-shadow: none;
+}
+.synergy{
+    box-shadow: black 1px 0 10px;
+    height: 60vh;
+    width: 100%;
+    background-color:#191c25;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    display: flex;
+
+}
+.synergy-table{
+    width: 700px;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid #dddddd;
+    
+}
+.synergy-tr {
+    text-align: center;
+    padding: 10px;
+    border: 3px solid rgb(29, 61, 19);
+    background-color: #11151d;
+}
+.synergy-th{
+    border: 3px solid black;
+    text-align: center;
+    width: 100%;
+    background-color: #11151d;
+    
+}
+.synergy a{
+    color: #103fb8;
+}
+.synergy-td {
+    text-align: center;
+    color: white;
+    height: 60px;
+    padding: 10px;
+    padding-bottom: 0;
+    border: 3px solid rgb(47, 83, 36);
+    background-color: #11151d;
+}
+.synergy-fix{
+    padding: 0;
+    margin: 0;
+}
+.synergy img{
+    text-align: center;
+}
+.synergy-left{
+    background-image:url(img/изображение_2024-04-16_194402732.png);
+    flex-wrap: nowrap;
+    width: 400px;
+    object-fit: fill;
+    background-position: -10px;
+}
+.flame{
+    animation: flame 1s linear;
+}
+.flame:hover{
+    background-image: url(gif/FlameScourage.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 0;
+    width: 60px;
+}
+.shadow{
+    animation: shadow 1s linear;
+}
+.shadow:hover{
+    background-image: url(gif/ShadowDevour.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 0;
+    background-position: 0px;
+    width: 100px;
+}
+.ice{
+    animation: ice 1s linear;
+}
+.ice:hover{
+    background-image: url(gif/Iceberg_lettuceee.webp);  
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: -20px;
+    font-size: 0;
+    background-position: 0px;
+}
+.iron{
+    animation: iron 1s linear;
+}
+.iron:hover{
+    background-image: url(gif/Iron_slam.webp);  
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: -20px;
+    font-size: 0;
+    background-position: 0px;
+}
+.thunder{
+    animation: thunder 1s linear;
+}
+.thunder:hover{
+    background-image: url(gif/Electro_carve.webp);  
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: -20px;
+    font-size: 0;
+    background-position: 0px;
+}
+.wind{
+    animation: wind 1s linear;
+}
+.wind:hover{
+    background-image: url(gif/Astralwind.webp);  
+    background-size: 100%;;  
+    background-repeat: no-repeat;
+    padding-top: -20px;
+    font-size: 0;
+    background-position: 0px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 80px 70px;
+    padding-right: 150px;
+    background-color: #212633;
+    margin-top: 0px;
+    border: solid #2B344B;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 255, 21, 0.562);
+}
+.footer a{
+    text-decoration: none;
+    color: #103fb8;
+}
